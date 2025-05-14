@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip To Go</title>
+  <link rel="stylesheet" href="trip-list.css">
+</head>
+<body>
+  <div class="page_container">
+    <div class="navbar_component">
+      <a href="index.html" class="logo_button">TRIP TO GO</a>
+      
+      <div class="centered_buttons">
+        <!-- Logged-out version -->
+        <a href="login.html"><button>Start a trip</button></a>
+
+        <!-- Logged-in version example -->
+        <!-- 
+        <a href="trip-list.html?openModal=true"><button>Start a trip</button></a>
+        <a href="trip-list.html"><button>My trips</button></a>
+        -->
+        <a href="trip-list.html"><button>My trips</button></a>
+        <a href=#footer id="scroll-to-footer"><button>Contact us</button></a>
+      </div>
+
+      <div class="login_logout">
+        <!-- Logged-out -->
+        <!-- <a href="login.html"><button>Sign in</button></a> -->
+        <!-- <a href="register.html"><button id="get_started">Get started</button></a> -->
+
+        <!-- Logged-in example -->
+         <a href="login.html" id="sign-out-button"><button>Sign out</button></a>
+        
+        <a href="profile.html">
+          <div class="avatar_container">
+            <img src="assets/users/user-2.jpg" alt="profile picture" id="profile_picture">
+          </div>
+        </a>
+       
+      </div>
+    </div>
+
+
+    <div class="trip_list_layout">
+      <div class="navbar_layout">
+        <div class="filterBar">
+          <button>All trips</button>
+          <button>Active trips</button>
+          <button>Past trips</button>
+        </div>
+        <div class="buttonAdd">
+          <span> Create a trip </span>
+          <a href="trip-list-create.html"><button>
+            <img src="assets/pictograms/image.png" alt="+" />
+          </button></a>
+        </div>
+      </div>
+
+      <p class="ownership">Your trips</p>
+      <ul class="trips-list">
+          <li>
+            <a href="trip-details.html">
+            <div class="snippet_layout">
+              <div class="fillImg">
+                  <img src="assets/trip-image.jpg" alt="Image not found">
+              </div>
+              <div class="title_description">
+                  <button class="nameButton"> Calm evening near the lake </button>
+                  <p>The lake would soon be alive again with laughter and splashing, it will only be just a few more minutes now. 
+                    The gentle breeze of the afternoon brings with it cooler temperatures for the evening, 
+                    but promise to send you in circles if you’re caught on a solo canoe ride as I was hoping for.</p>
+              </div>
+              <div class="partiDateContainer">
+                  <span class="partiAmount"> Number of participants: 2 </span>
+                  <span class="tripDate"> Start-end date: 24/05/2025 - 25/05/2025 </span>
+              
+                  <button class="deleteIcon">
+                        <img src="assets/pictograms/leave-icon.png" alt="Leave icon">
+                  </button>
+          
+              </div>
+            </div>
+          </a></li>
+      </ul>
+    <hr>
+    <p class="ownership">Other's trips</p>
+    <p class="fallback-text">You haven't subscribed to any trips yet.</p>
+  </div>
+    
+
+    <footer id="footer">
+      <div class="contact_info">
+        <p>Something's wrong? Contact us:</p>
+        <ul>
+          <li>Telegram: <a href="https://t.me/NBNP">https://t.me/NBNP</a></li>
+          <li>Gmail: nbnp&#64;gmail.com</li>
+        </ul>
+      </div>
+      <div class="support_info">
+        <p>Want to support us? You can buy us a coffee :)</p>
+        <ul>
+          <li><a href="https://buymeacoffee.com/">https://buymeacoffee.com/</a></li>
+        </ul>
+      </div>
+      <div class="privacy_policy">
+        <p><a href="privacy.html">Our Privacy Policy</a></p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+

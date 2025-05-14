@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip To Go</title>
+  <link rel="stylesheet" href="trip-details.css">
+</head>
+<body>
+  <div class="page_container">
+    <div class="navbar_component">
+      <a href="index.html" class="logo_button">TRIP TO GO</a>
+      
+      <div class="centered_buttons">
+        <!-- Logged-out version -->
+        <a href="login.html"><button>Start a trip</button></a>
+
+        <!-- Logged-in version example -->
+        <!-- 
+        <a href="trip-list.html?openModal=true"><button>Start a trip</button></a>
+        <a href="trip-list.html"><button>My trips</button></a>
+        -->
+
+        <a href=#footer id="scroll-to-footer"><button>Contact us</button></a>
+      </div>
+
+      <div class="login_logout">
+        <!-- Logged-out -->
+        <!-- <a href="login.html"><button>Sign in</button></a> -->
+        <!-- <a href="register.html"><button id="get_started">Get started</button></a> -->
+
+        <!-- Logged-in example -->
+         <a href="login.html" id="sign-out-button"><button>Sign out</button></a>
+        
+        <a href="profile.html">
+          <div class="avatar_container">
+            <img src="assets/users/user-2.jpg" alt="profile picture" id="profile_picture">
+          </div>
+        </a>
+       
+      </div>
+    </div>
+
+
+    <div class="page_body">
+        <div class="left_part">
+            <div class="trip-header">
+                <p>Calm evening near the lake</p> 
+                <div class="trip-actions"><button><span>Share </span><img src="assets\pictograms\share-icon.png" alt="share-icon"></button> </div>
+            </div>
+
+            <div class="app-main-container">
+                <div class="main_info_body">
+                    <p><span><b>Status: </b></span> <span>Active</span></p>
+                    <p><b>Start date: </b> 24/05/2025</p>
+                    <p><b>End date: </b> 25/05/2025</p>
+                    <p class="description"><b>Description</b></p>
+                    <p>The lake would soon be alive again with laughter and splashing, it will only be just a few more minutes now. 
+                        The gentle breeze of the afternoon brings with it cooler temperatures for the evening, 
+                        but promise to send you in circles if you’re caught on a solo canoe ride as I was hoping for.</p>
+                </div>
+
+                <div class="event-container">
+                    <div>
+                        <div class="event-item">
+                            <p class="date">24/05/2025</p>
+                            <hr/>
+                            <div class="event_title_icons">
+                                <p id="event_title">Departure</p>
+                                <div class="images">
+                                    <button id="edit-pictogram"><img src="assets/pictograms/edit-pictogram.png" alt="edit-pictogram"></button>
+                                    <button id="rubbish-bin-pictogram"><img src="assets/pictograms/rubbish-bin-pictogram.png" alt="rubbish-bin-pictogram"></button>
+                                </div>
+                            </div>
+                            <p id="event_description">We're departuring from Huston's bus stop in Denmark. Bring along good food and spirit.</p>
+                            <span id="time">Time: 9 AM</span>
+                        </div>
+                    </div>
+                    <div class="add_event"><button id="add_event_button">Add event</button></div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="app-sidebar-container">
+            <div class="sidebar-content">
+                <div class="trip-photo">
+                    <div class="image-placeholde">
+                        <img src="assets/trip-image.jpg" alt="Image not found">
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button id="join">Leave the trip</button>
+                    <div class="links">
+                        <button>Trip’s chat link <img src="assets\pictograms\link.png" alt="link"/></button>
+                        <button> Expenses link <img src="assets/pictograms/link.png" alt="link" /></button>
+                    </div>
+                </div>
+                <div class="responsibilities">
+                    <div class="trip-tasks">
+                        <h3>Tasks</h3>
+
+                        <div>
+                            <ul>
+                                <a href="tasks-page.html"><li>Bring a guitar</li></a>
+                                <a href="tasks-page.html"><li>Bring some cards</li></a>
+                                <a href="tasks-page.html"><li>Plan the night</li></a>
+                            </ul>
+                        </div>
+
+                        <div class="button-wrapper">
+                            <a href="tasks-page.html"><button>See more...</button></a>
+                        </div>
+                    </div>
+                </div>
+            
+                <h3>Participants</h3>
+                <div class="participants_container"> 
+                    <ul id="participants">
+                        <li>
+                            <a href="profile.html"><div class="participant-button">
+                                <img src="assets/default-avatar.jpg"
+                                    alt="Profile picture">
+                                <span>Tim Works</span>
+                            </div></a>
+                        </li>
+                        <li>
+                            <a href="profile.html"><div class="participant-button">
+                                <img src="assets/users/user-2.jpg"
+                                    alt="Profile picture">
+                                <span>Alice Works</span>
+                            </div></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button id="edit_trip_button">Edit the trip</button>
+                <button class = 'delete-button'>Delete the trip</button>
+            </div>
+  
+        </div>
+    </div>
+    
+
+    <footer id="footer">
+      <div class="contact_info">
+        <p>Something's wrong? Contact us:</p>
+        <ul>
+          <li>Telegram: <a href="https://t.me/NBNP">https://t.me/NBNP</a></li>
+          <li>Gmail: nbnp&#64;gmail.com</li>
+        </ul>
+      </div>
+      <div class="support_info">
+        <p>Want to support us? You can buy us a coffee :)</p>
+        <ul>
+          <li><a href="https://buymeacoffee.com/">https://buymeacoffee.com/</a></li>
+        </ul>
+      </div>
+      <div class="privacy_policy">
+        <p><a href="privacy.html">Our Privacy Policy</a></p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

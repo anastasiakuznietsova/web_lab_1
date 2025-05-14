@@ -1,0 +1,161 @@
+button:hover{
+    cursor:pointer;
+}
+
+.page_container{
+    position:absolute;
+    left:0;
+    top:0;
+    max-width:100vw;
+    width: 99vw;
+    min-height: 100vh;
+    height: max-content;
+    background-color: $background-dark;
+    overflow-x:hidden;
+}
+.navbar_component {
+    position: fixed;
+    width: 100dvw;
+    height: min(3.6rem, 8dvh);
+    left: 0;
+    top: 0;
+    background-color: $navbar_transparent;
+    display: flex;
+    align-items: center;
+    color: $light_text;
+    z-index: 10;
+    padding: 0 4%;
+    overflow:hidden;
+}
+.logo_button {
+    font-size: clamp(1.9rem,3.5vw,2.3rem);
+    font-family: $navbar-font;
+    font-weight: 600;
+    margin-right: 6%;
+    background-color: transparent;
+    color: $light_text;
+    border: none;
+    text-decoration: none;
+    
+    &:hover {
+        color: $navbar-green;
+    }
+}
+
+%navigation-button{
+    background-color: transparent;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.2rem 1rem;
+    color: $light_text;
+    font-size: clamp(1.6rem,3.5vw,2rem);
+    font-family: $navbar-font;
+    font-weight: 330;
+    letter-spacing: 0%;
+    overflow:hidden;
+}
+%remove-a-tag-nav{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.centered_buttons {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    a{
+        @extend %remove-a-tag-nav;  
+        min-width: clamp(7rem, 18vw, 12rem);     
+        margin-right: min(1vw,1%); 
+        button {
+            @extend %navigation-button;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.103);
+            }
+        }
+    }
+    
+}
+.login_logout {
+    margin-right: min(3%,5rem);
+    padding-right: min(5%,5rem);
+    display: flex;
+    a{
+        @extend %remove-a-tag-nav;
+        button {
+            @extend %navigation-button;
+            padding:0;
+            border-radius:0;
+            &:hover {
+                color: $navbar-green;
+            }
+        }
+    }
+}
+#get_started{
+    margin-left:1vw;
+    padding:0.1vh 1.3vw;
+    border-radius: 68px;
+    background-color:rgba(255, 255, 255, 0.105);
+
+    &:hover{
+        background-color:rgba(255, 255, 255, 0.273);
+        color: $light_text;
+    }
+}
+.avatar_container{
+    background-color: $light-background;
+    border-radius:100%;
+    width: clamp(2rem, 2.6vw,2.5rem);
+    height: auto;
+    margin-left:1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: solid max(0.08rem, 0.15vw);
+    border-color: $dark-green;
+}
+#profile_picture{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer{
+    position:relative;
+    left:0;
+    bottom:0;
+    width:100dvw;
+    height: clamp(70px, 14dvh, 110px);
+    background-color: $footer-dark;
+    color: $light_text;
+    font-size: clamp(0.5rem, 3vw ,1rem);
+    font-family: $navbar-font;
+    font-weight: 300;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    z-index: 3;
+    padding-inline:1.3vw;
+}
+.contact_info, .support_info, .privacy_policy{
+    min-width:11.5rem;
+}
+
+a{
+    color: $dark-green;
+    cursor:pointer;
+
+    &:link, &:visited {
+        color: $dark-green;
+    }
+    &:hover, &:active{
+        color: $navbar-green;
+    }
+}

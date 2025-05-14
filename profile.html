@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip To Go</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="page_container">
+    <div class="navbar_component">
+      <a href="index.html" class="logo_button">TRIP TO GO</a>
+      
+      <div class="centered_buttons">
+        <!-- Logged-out version -->
+        <!-- <a href="login.html"><button>Start a trip</button></a> -->
+
+        <!-- Logged-in version example -->
+        
+        <a href="trip-list-create.html"><button>Start a trip</button></a>
+        <a href="trip-list.html"><button>My trips</button></a>
+       
+
+        <a href=#footer id="scroll-to-footer"><button>Contact us</button></a>
+      </div>
+
+      <div class="login_logout">
+        <!-- Logged-out -->
+        <!-- <a href="login.html"><button>Sign in</button></a> -->
+        <!-- <a href="register.html"><button id="get_started">Get started</button></a> -->
+
+        <!-- Logged-in example -->
+         <a href="login.html" id="sign-out-button"><button>Sign out</button></a>
+        
+        <a href="profile.html">
+          <div class="avatar_container">
+            <img src="assets/users/user-2.jpg" alt="profile picture" id="profile_picture">
+          </div>
+        </a>
+       
+      </div>
+    </div>
+
+    <div class="page_body">
+      <div class="left_part">
+          <div class="component_body">
+            <h2>Your active trips</h2>
+            <hr/>
+                <ul>
+                  <a href="trip-details.html" class="trip-snippet"><li>Calm evening near the lake</li></a>
+                </ul>
+            <a href="trip-list.html">See more...</a>
+          </div>
+
+
+
+          <div class="side_info">
+            <p id="block_title">Other information:</p>
+            <span class="line_title">Phone number: </span>
+            <span>Not set</span>
+            <p></p>
+            <span class="line_title">Messenger link: </span>
+            <a>https://vns.lpnu.ua/my/</a>
+        </div>
+        <button>Sign out</button>
+      </div>
+
+      <div class="right_part">
+          <div class="main_info">
+              <div class="image_container">
+                  <img src="assets/users/user-2.jpg"/>
+              </div>
+              <p id="email_username">alice_works@gmail.com</p>
+              <div id="info_block">
+                  <p><b>Full name: </b>Alice Works</p>
+                  <p><span><b>Gender: </b></span> <span>Female</span></p>
+
+                  <p><span><b>Birth date: </b></span><span>25/02/2003</span></p>
+              </div>
+          </div>
+          <div class="actions">
+              <button>Edit profile</button>
+              <button class="delete-button">Delete profile</button>
+          </div>
+      </div>
+
+    </div>
+
+
+    <footer id="footer">
+      <div class="contact_info">
+        <p>Something's wrong? Contact us:</p>
+        <ul>
+          <li>Telegram: <a href="https://t.me/NBNP">https://t.me/NBNP</a></li>
+          <li>Gmail: nbnp&#64;gmail.com</li>
+        </ul>
+      </div>
+      <div class="support_info">
+        <p>Want to support us? You can buy us a coffee :)</p>
+        <ul>
+          <li><a href="https://buymeacoffee.com/">https://buymeacoffee.com/</a></li>
+        </ul>
+      </div>
+      <div class="privacy_policy">
+        <p><a href="privacy.html">Our Privacy Policy</a></p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

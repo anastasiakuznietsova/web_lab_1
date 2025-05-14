@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip To Go</title>
+    <link rel="stylesheet" href="tasks-page.css">
+</head>
+<body>
+    <div class="page_container">
+    <div class="navbar_component">
+      <a href="index.html" class="logo_button">TRIP TO GO</a>
+      
+      <div class="centered_buttons">
+        <!-- Logged-out version -->
+        <a href="login.html"><button>Start a trip</button></a>
+
+        <!-- Logged-in version example -->
+        <!-- 
+        <a href="trip-list.html?openModal=true"><button>Start a trip</button></a>
+        <a href="trip-list.html"><button>My trips</button></a>
+        -->
+
+        <a href=#footer id="scroll-to-footer"><button>Contact us</button></a>
+      </div>
+
+      <div class="login_logout">
+        <!-- Logged-out -->
+        <!-- <a href="login.html"><button>Sign in</button></a> -->
+        <!-- <a href="register.html"><button id="get_started">Get started</button></a> -->
+
+        <!-- Logged-in example -->
+         <a href="login.html" id="sign-out-button"><button>Sign out</button></a>
+        
+        <a href="profile.html">
+          <div class="avatar_container">
+            <img src="assets/users/user-2.jpg" alt="profile picture" id="profile_picture">
+          </div>
+        </a>
+       
+      </div>
+    </div>
+
+
+    <div class="page-layout">
+      <div class="tasks-header">
+        <nav class="filters">    
+          <button>All</button>
+          <button>Your tasks</button>
+          <button>Done</button>
+  
+          <button>In progress</button>
+        </nav>
+        <button class="create-task">Create a task <span>+</span></button>
+      </div>
+
+
+      <div class="task-list">
+        <div class="task-card">
+          <div class="task-summary">
+            
+            <div class="task-info">
+              <div>
+                <p>Bring a guitar</p>
+      
+                <div class="details">
+                  <span>Deadline:</span><span>25/05/2025</span>
+                  <div class="status_dot_text">
+                    <span class="status-dot">•</span>
+                    <span>In progress</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="right-section">
+              <div>
+                <div class="avatar-wrapper">
+                  <div class="avatar_container"><img src="assets/default-avatar.jpg" alt="User Avatar"/></div>
+                </div>
+              </div>
+              
+              <div class="icons-arrow">
+                <div class="icons">
+                  <button><img src="assets/pictograms/edit-pictogram.png" alt="Edit"></button>
+                  <button><img src="assets/pictograms/rubbish-bin-pictogram.png" alt="Delete"></button>
+                </div>
+                <button class="arrow-button"><img src="assets/pictograms/down-arrow-pictogram.png" alt="arrow"></button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="task-card">
+          <div class="task-summary">
+            
+            <div class="task-info">
+              <div>
+                <p>Plan the trip's night</p>
+      
+                <div class="details">
+                  <span>Deadline:</span><span>26/05/2025</span>
+                  <div class="status_dot_text">
+                    <span class="status-dot">•</span>
+                    <span>In progress</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="right-section">
+              <div>
+                <div class="avatar-wrapper">
+                  <div class="avatar_container"><img src="assets/users/user-2.jpg" alt="User Avatar"/></div>
+                </div>
+              </div>
+              
+              <div class="icons-arrow">
+                <div class="icons">
+                  <button><img src="assets/pictograms/edit-pictogram.png" alt="Edit"></button>
+                  <button><img src="assets/pictograms/rubbish-bin-pictogram.png" alt="Delete"></button>
+                </div>
+                <button class="arrow-button"><img src="assets/pictograms/down-arrow-pictogram.png" alt="arrow"></button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+    
+
+
+    </div>
+
+    <footer id="footer">
+      <div class="contact_info">
+        <p>Something's wrong? Contact us:</p>
+        <ul>
+          <li>Telegram: <a href="https://t.me/NBNP">https://t.me/NBNP</a></li>
+          <li>Gmail: nbnp&#64;gmail.com</li>
+        </ul>
+      </div>
+      <div class="support_info">
+        <p>Want to support us? You can buy us a coffee :)</p>
+        <ul>
+          <li><a href="https://buymeacoffee.com/">https://buymeacoffee.com/</a></li>
+        </ul>
+      </div>
+      <div class="privacy_policy">
+        <p><a href="privacy.html">Our Privacy Policy</a></p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

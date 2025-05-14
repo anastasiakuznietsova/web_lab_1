@@ -1,0 +1,154 @@
+@import 'scss/variables';
+@import 'scss/components';
+
+
+.main_container {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.25), hsla(0, 0%, 0%, 0.25)), url("/assets/main_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+.background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(2.5px);
+}
+
+.form_container {
+    position: relative;
+    background-color: $light-background;
+    width: clamp(15em, 22vw, 40em);
+    height: auto;
+    margin: auto;
+    padding: clamp(3em, 4vw, 4em);
+    border-radius: 7px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    font-size: clamp(30px, 5vw, 40px);
+    font-family: $text-font;
+    font-weight: 700;
+    letter-spacing: 0%;
+    color: $dark-green;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+img {
+    margin: 2px;
+    width: clamp(1em, 3vw, 1.3em);
+    height: auto;
+}
+
+input {
+    width: 100%;
+    height: clamp(35px, 5vh, 50px);
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    padding-left: clamp(40px, 5vw, 50px);
+    background-color: $snippet-brown;
+    box-shadow: inset 0px 4px 4px rgba(187, 182, 174, 0.54);
+    font-size: clamp(14px, 1.5vw, 17px);
+    font-family: $text-font;
+    color: $text-brown;
+    font-weight: 400;
+}
+
+.inp {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: clamp(40px, 6vh, 50px);
+    margin-top: min(15px, 5%);
+}
+
+.pictogram {
+    position: absolute;
+    top: auto;
+    left: auto;
+    padding: 5px 17px;
+    width: clamp(1em, 3vw, 1.3em);
+    height: auto;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 70px;
+    top: auto;
+    width: clamp(1em, 3vw, 1.3em);
+    height: auto;
+}
+
+.register {
+    background-color: $dark-green;
+    color: $light_text;
+    border: none;
+    width: max-content;
+    padding: 0px clamp(20px, 5vw, 40px);
+    border-radius: 16px;
+    margin-top: 15px;
+    font-size: clamp(22px, 2.5vw, 26px);
+    font-family: $navbar-font;
+    font-weight: 600;
+    box-shadow: 0px 4px 4px #bbb6ae;
+
+    &:hover {
+        background-color: $navbar-green;
+        cursor:pointer;
+    }
+}
+
+
+.password-button {
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.login-container {
+    color: $text-brown;
+    text-align: center;
+    font-size: clamp(14px, 2vw, 17px);
+    font-family: $text-font;
+    font-weight: 400;
+}
+
+p {
+    margin: auto;
+    margin-top: 20px;
+}
+
+a{
+    &:link, &:visited {
+        color: $dark-green;
+    }
+    &:hover, &:active{
+        color: $navbar-green;
+    }
+}
+
+
+.error-text {
+    color: #b42b2b;
+    text-align: center;
+    font-size: clamp(12px, 1.5vw, 14px);
+    font-family: $text-font;
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+
+@import 'scss/media';

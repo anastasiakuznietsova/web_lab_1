@@ -1,0 +1,19 @@
+@media (max-width: 700px) {
+    #scroll-to-footer{
+        display: none;
+    }
+    #sign-out-button{
+        display: none;
+    }
+    #get_started{
+        display: none;
+    }
+    .logo_button {
+        margin-right: 0;
+    }
+    .centered_buttons{
+        a{
+            margin-right: 0;
+        }
+    }
+}

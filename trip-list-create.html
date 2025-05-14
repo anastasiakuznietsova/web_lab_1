@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip To Go</title>
+  <link rel="stylesheet" href="trip-list-create.css">
+</head>
+<body>
+  <div class="page_container">
+    <div class="navbar_component">
+      <a href="index.html" class="logo_button">TRIP TO GO</a>
+      
+      <div class="centered_buttons">
+        <!-- Logged-out version -->
+        <a href="login.html"><button>Start a trip</button></a>
+
+        <!-- Logged-in version example -->
+
+        <a href="trip-list.html"><button>My trips</button></a>
+
+        <a href=#footer id="scroll-to-footer"><button>Contact us</button></a>
+      </div>
+
+      <div class="login_logout">
+        <!-- Logged-out -->
+        <!-- <a href="login.html"><button>Sign in</button></a> -->
+        <!-- <a href="register.html"><button id="get_started">Get started</button></a> -->
+
+        <!-- Logged-in example -->
+         <a href="login.html" id="sign-out-button"><button>Sign out</button></a>
+        
+        <a href="profile.html">
+          <div class="avatar_container">
+            <img src="assets/users/user-2.jpg" alt="profile picture" id="profile_picture">
+          </div>
+        </a>
+       
+      </div>
+    </div>
+
+
+    <div class="modal-overlay" *ngIf="isModalOpen" >
+      <div class="modal">
+  
+        <div class="title_close">
+          <h3>Create a trip</h3>
+          <a href="trip-list.html"><button>X</button></a>
+        </div>
+        
+        <label for="title">Title: </label>
+        <input type="text" id="title" placeholder="Enter a title..."/>
+  
+        <p><label for="start_date">Start date: </label>
+        <input type="date" id="start_date" placeholder="Start date"/></p>
+            
+        <p><label for="end_date">End date: </label>
+        <input type="date" id="end_date" placeholder="End date" /></p>
+  
+        <p class="labels">Description: </p>
+        <textarea placeholder="Enter a description..." id="description"></textarea>
+    
+        <div class="links">
+          <div class="link">
+            <label for="group_link">Add chat link: </label>
+            <input type="url" id="group_link" placeholder="Group link" />
+          </div>
+  
+          <div class="link">
+            <label for="finance_link">Add expenses link: </label>
+            <input type="url" id="finance_link" placeholder="Finance link" />
+          </div>
+        </div>
+  
+        <div id="imgPick">
+          <span class="upload-wrapper">
+            <button type="button" class="custom-upload-button"">Upload trip image</button>
+            <input #fileInputCreate type="file" (change)="onImageSelected($event)" hidden />
+          </span>
+        </div>
+        
+    
+        <a href="trip-details.html"><button id="save">Create</button></a>
+      </div>
+    </div>
+    
+
+
+    <footer id="footer">
+      <div class="contact_info">
+        <p>Something's wrong? Contact us:</p>
+        <ul>
+          <li>Telegram: <a href="https://t.me/NBNP">https://t.me/NBNP</a></li>
+          <li>Gmail: nbnp&#64;gmail.com</li>
+        </ul>
+      </div>
+      <div class="support_info">
+        <p>Want to support us? You can buy us a coffee :)</p>
+        <ul>
+          <li><a href="https://buymeacoffee.com/">https://buymeacoffee.com/</a></li>
+        </ul>
+      </div>
+      <div class="privacy_policy">
+        <p><a href="privacy.html">Our Privacy Policy</a></p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

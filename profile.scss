@@ -1,0 +1,210 @@
+@import 'scss/variables';
+@import 'scss/components';
+
+
+.page_body{
+    position:relative;
+    width:74vw;
+    min-height: 75vh;
+    background-color: $light-background;
+    margin:auto;
+    margin-top:59px;
+    padding:3% 4%;
+    padding-bottom:6%;
+
+    font-family: $text-font;
+    display:flex;
+    z-index:3;
+}
+
+
+.left_part{
+    width:100%;
+}
+
+.side_info{
+    margin-left:5%;
+    font-size: 1.2rem;
+}
+#block_title{
+    font-size: 1.6rem;
+    margin-left:5%;
+    color: $dark-green;
+    font-weight: 450;
+    margin-bottom:7%;
+}
+.line_title{
+    color: $dark-green;
+    margin-right:5%;
+}
+
+
+.right_part{
+    width:78%;
+}
+.main_info{
+    margin-left:auto;
+    width:75%;
+    height:90%;
+    border-radius:0.8vw;
+    background-color: $snippet-brown;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding:5%;
+    font-size:1.19rem;
+}
+#info_block{
+    width:80%;
+    p{
+        margin-bottom:8%;
+    }
+}
+
+.image_container{
+    width:15vw;
+    height:32vh;
+    border-radius:100%;
+    background-color: $darker-brown;
+    box-shadow: inset -3px 8px 4px rgba(0, 0, 0, 0.279); 
+    flex-shrink: 0;
+    flex-grow: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 0.3vw solid;
+    border-color: $darker-brown;
+
+    img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+}
+
+#email_username{
+    color: $dark-green;
+    font-size:1.5rem;
+    font-weight:600;
+    margin-bottom:8%;
+}
+b{
+    color: $dark-green;
+    font-weight: 580;
+}
+
+.actions{
+    margin-top:5%;
+    display:flex;
+    justify-content: end;
+    button{
+        width:37%;
+        background-color: $dark-green;
+        border:none;
+        color: $light_text;
+        padding: 1% 6%;
+        border-radius:1vw;
+        font-family: $text-font;
+        font-size: 1.2rem;
+        font-weight:500;
+        margin-inline:2.5%;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        &:hover{
+            background-color: $navbar-green;
+        }
+    }
+
+    .delete-button {
+        background-color: $red;
+        color: white;
+
+        &:hover {
+            background-color: $light-red;
+        }
+    }
+}
+
+
+.component_body{
+    width:100%;
+    min-height:40vh;
+    background-color: $snippet-brown;
+    padding:4% 0.5%;
+    border-radius:0.5vw;
+    display:flex;
+    flex-direction:column;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-bottom:7%;
+    font-family: $text-font;
+
+    h2{
+        color: $dark-green;
+        font-family: $text-font;
+        font-size:2rem;
+        font-weight:580;
+        text-align: center;
+        margin:0;
+    }
+
+    li{
+        width:80%;
+        padding:1.8% 6.5%;
+        border-radius:0.5vw;
+        background-color: $light-event;
+        list-style-type: none;
+        margin-bottom:2.5%;
+        font-family: $text-font;
+        font-size:1.2rem;
+        cursor:pointer;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.121));
+        &:hover{
+            background-color: $top-trips-active;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+    }
+
+    a{
+        margin-top:auto;
+        text-align:center;
+        font-family: $text-font;
+        font-size:1.2rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
+}
+
+hr{
+    margin:0;
+    margin-inline:auto;
+    width:55%;
+    height: 1.6px;
+    border:none;
+    background-color: $dark-brown;
+    margin-bottom:3%;
+}
+
+.trip-snippet{
+    color:#333;
+    li{
+        font-weight: 420;
+        text-align:start;
+    }
+    &:hover{
+        color:#333;
+    }
+}
+
+
+.fallback-text{
+    font-family: $text-font;
+    color: $dark-brown;
+    font-size:1.3rem;
+    text-align:center;
+}
+
+
+@import 'scss/media';
